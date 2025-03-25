@@ -1,0 +1,13 @@
+#outer_div{
+    width: 500px;
+    height: 500px;
+    background-color: orange;
+    display: grid;
+    place-items: center;
+}
+#inner_div{
+    background-color: rgb(31, 105, 44);
+    width: 200px;
+    height: 250px;
+    margin: auto;
+}

@@ -1,0 +1,11 @@
+#text{
+    color: gray;
+    font-size: larger;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+}
+#content{
+    background:linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    width: 350px;
+}

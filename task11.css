@@ -1,0 +1,13 @@
+#border{
+    border:solid 4px red;
+    width: 900px;
+    padding: 20px;
+    border-radius:25px;
+}
+
+#border1{
+    border:solid 4px red;
+    width: 900px;
+    padding: 20px;
+    border-radius: 45px 20px 45px 20px;
+}

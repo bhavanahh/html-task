@@ -1,0 +1,14 @@
+#head{
+    font-weight: 300;
+}
+#body{
+    height: 150px;
+    width: 390px;
+    padding-left: 50px;
+    padding-top: 40px;
+    padding-right: 50px;
+    border: 10px solid black;
+    text-align: left;
+    background-color: rgb(76, 76, 140);
+    margin-left: 30px;
+}
