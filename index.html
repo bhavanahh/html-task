@@ -6,20 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Demon Slayer Stickers</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Zen+Kaku+Gothic+Antique:wght@500&display=swap" rel="stylesheet">
   <style>
     body {
-      background: url('your-image.jpg') center/cover no-repeat fixed;
+      background-color: #121212;
       color: #fff;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Zen Kaku Gothic Antique', sans-serif;
     }
-
     .navbar-brand {
+      font-family: 'Bungee', cursive;
       font-weight: bold;
-      color: #e63946 !important;
+      color: #f05454 !important;
     }
-
     .hero {
-      background: rgba(0, 0, 0, 0.6);
+      background: url('main.jpg') center/cover no-repeat;
       height: 100vh;
       display: flex;
       align-items: center;
@@ -27,83 +27,71 @@
       text-align: center;
       flex-direction: column;
     }
-
     .hero h1 {
+      font-family: 'Bungee', cursive;
       font-size: 4rem;
       font-weight: bold;
       text-shadow: 2px 2px 4px #000;
     }
-
     .hero p {
       font-size: 1.5rem;
     }
-
     .btn-shop {
-      background-color: #e63946;
+      background-color: #f05454;
       border: none;
     }
-
     .feature-box {
       padding: 20px;
-      background-color: rgba(42, 42, 42, 0.85);
+      background-color: #1f1f1f;
       border-radius: 10px;
       margin-bottom: 20px;
     }
-
     .sticker-img {
       width: 100%;
       border-radius: 10px;
       transition: transform 0.3s;
     }
-
     .sticker-img:hover {
       transform: scale(1.05);
     }
-
     .scroll-top {
       position: fixed;
       bottom: 20px;
       right: 20px;
       display: none;
-      background: #e63946;
+      background: #f05454;
       color: white;
       border: none;
       padding: 10px;
       border-radius: 50%;
     }
-
     footer {
-      background-color: rgba(42, 42, 42, 0.85);
+      background-color: #1f1f1f;
       padding: 20px;
     }
   </style>
 </head>
-
 <body>
-  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="#">DemonSlay Stickers</a>
+      <a class="navbar-brand" href="#">DemonSlayer Stickers</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
-
-  <!-- Hero -->
   <section class="hero text-white">
     <h1>Demon Slayer Sticker Pack</h1>
     <p>Unleash your anime obsession with high-quality sticker magic!</p>
     <button class="btn btn-shop mt-3" onclick="alert('Stickers added to cart!')">Shop Now</button>
   </section>
-
-  <!-- Features -->
   <section class="container my-5" id="features">
     <div class="row text-center">
       <h2 class="mb-4">Why You'll Love It</h2>
@@ -127,17 +115,23 @@
       </div>
     </div>
   </section>
-
-  <!-- Image Grid -->
-  <section class="container mb-5">
+<section class="container mb-5" id="gallery">
+    <h2 class="text-center mb-4">Sticker Gallery</h2>
     <div class="row g-3">
-      <div class="col-md-4"><img class="sticker-img" src="https://i.imgur.com/aD1DTYH.jpeg" alt="Sticker 1"></div>
-      <div class="col-md-4"><img class="sticker-img" src="https://i.imgur.com/ZKM2ZHw.jpeg" alt="Sticker 2"></div>
-      <div class="col-md-4"><img class="sticker-img" src="https://i.imgur.com/sLb4P6A.jpeg" alt="Sticker 3"></div>
+      <div class="col-md-4 text-center">
+        <img class="sticker-img" src="tanji.jpeg" alt="Tanjiro sticker">
+        <p>Tanjiro Kamado - The Water Breathing Warrior</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <img class="sticker-img" src="nezu.jpeg" alt="Nezuko sticker">
+        <p>Nezuko Kamado - The Fierce and Adorable Demon</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <img class="sticker-img" src="zeni.jpeg" alt="Zenitsu sticker">
+        <p>Zenitsu Agatsuma - The Thunderbolt Hero</p>
+      </div>
     </div>
   </section>
-
-  <!-- Contact Section -->
   <section class="container mb-5" id="contact">
     <h2 class="text-center mb-4">Get in Touch</h2>
     <form>
@@ -156,16 +150,10 @@
       <button type="submit" class="btn btn-shop">Send</button>
     </form>
   </section>
-
-  <!-- Scroll to Top Button -->
   <button onclick="topFunction()" id="scrollTopBtn" class="scroll-top">&#8679;</button>
-
-  <!-- Footer -->
   <footer class="text-center">
-    <p>&copy; 2025 DemonSlay Stickers | Follow us on Insta @demonslaystickers</p>
+    <p>&copy; 2025 DemonSlay Stickers | Follow us on Insta @demonslayerstickers</p>
   </footer>
-
-  <!-- JS Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     const scrollTopBtn = document.getElementById("scrollTopBtn");
@@ -176,11 +164,9 @@
         scrollTopBtn.style.display = "none";
       }
     }
-
     function topFunction() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   </script>
 </body>
-
 </html>
